@@ -6,6 +6,6 @@ RSpec.describe Game do
     subject { described_class.turn(board) }
     let(:board) { nil }
 
-    it { expect(subject).to eq(nil) }
+    it { expect(subject).to be_a(Game::Board) }
   end
 end
